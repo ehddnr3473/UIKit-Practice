@@ -17,6 +17,7 @@
 		6B7621252936E4C900C869C1 /* PlayOn_UIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7621242936E4C900C869C1 /* PlayOn_UIKitTests.swift */; };
 		6B76212F2936E4C900C869C1 /* PlayOn_UIKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B76212E2936E4C900C869C1 /* PlayOn_UIKitUITests.swift */; };
 		6B7621312936E4C900C869C1 /* PlayOn_UIKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7621302936E4C900C869C1 /* PlayOn_UIKitUITestsLaunchTests.swift */; };
+		6B76213F2936E61400C869C1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B76213E2936E61400C869C1 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		6B76212A2936E4C900C869C1 /* PlayOn_UIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayOn_UIKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B76212E2936E4C900C869C1 /* PlayOn_UIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayOn_UIKitUITests.swift; sourceTree = "<group>"; };
 		6B7621302936E4C900C869C1 /* PlayOn_UIKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayOn_UIKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6B76213E2936E61400C869C1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		6B7621092936E4C700C869C1 /* PlayOn_UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				6B7621402936E62200C869C1 /* Account */,
 				6B76210A2936E4C700C869C1 /* AppDelegate.swift */,
 				6B76210C2936E4C700C869C1 /* SceneDelegate.swift */,
 				6B76210E2936E4C700C869C1 /* ViewController.swift */,
@@ -128,6 +131,22 @@
 				6B7621302936E4C900C869C1 /* PlayOn_UIKitUITestsLaunchTests.swift */,
 			);
 			path = PlayOn_UIKitUITests;
+			sourceTree = "<group>";
+		};
+		6B7621402936E62200C869C1 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				6B7621412936E63000C869C1 /* Login */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		6B7621412936E63000C869C1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6B76213E2936E61400C869C1 /* LoginViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +283,7 @@
 				6B76210F2936E4C700C869C1 /* ViewController.swift in Sources */,
 				6B7621152936E4C700C869C1 /* PlayOn_UIKit.xcdatamodeld in Sources */,
 				6B76210B2936E4C700C869C1 /* AppDelegate.swift in Sources */,
+				6B76213F2936E61400C869C1 /* LoginViewController.swift in Sources */,
 				6B76210D2936E4C700C869C1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PlayOn_UIKit/PlayOn_UIKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 65KV6R2AGS;
@@ -467,6 +488,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PlayOn_UIKit/PlayOn_UIKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 65KV6R2AGS;
