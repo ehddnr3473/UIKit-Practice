@@ -8,25 +8,133 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Send View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PlayOn_UIKit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SendViewController" customModule="PlayOn_UIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="받은 문자열이 여기에 나타납니다." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryV-jb-d7g">
+                                <rect key="frame" x="30" y="159" width="333" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="보낼 문자열을 입력해주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ysF-4F-d5c">
+                                <rect key="frame" x="30" y="213" width="333" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edF-Ge-Ceq">
+                                <rect key="frame" x="150" y="277" width="93" height="60.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="SEND">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                    </backgroundConfiguration>
+                                    <directionalEdgeInsets key="contentInsets" top="20" leading="20" bottom="20" trailing="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="touchUpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HhV-BE-qPW"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ysF-4F-d5c" firstAttribute="top" secondItem="ryV-jb-d7g" secondAttribute="bottom" constant="30" id="DxH-Ng-peu"/>
+                            <constraint firstItem="ysF-4F-d5c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="OO4-FG-OMf"/>
+                            <constraint firstItem="edF-Ge-Ceq" firstAttribute="top" secondItem="ysF-4F-d5c" secondAttribute="bottom" constant="30" id="Pco-Fq-AXk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ysF-4F-d5c" secondAttribute="trailing" constant="30" id="TwA-nj-Moz"/>
+                            <constraint firstItem="edF-Ge-Ceq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="Zyt-dp-OG5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="edF-Ge-Ceq" secondAttribute="trailing" constant="150" id="b3Q-tJ-MG9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ryV-jb-d7g" secondAttribute="trailing" constant="30" id="cO1-ZN-Ifl"/>
+                            <constraint firstItem="ryV-jb-d7g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="ieT-Fb-Cdo"/>
+                            <constraint firstItem="ryV-jb-d7g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ugi-xF-bxQ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="edF-Ge-Ceq" id="UzU-dA-nt9"/>
+                        <outlet property="label" destination="ryV-jb-d7g" id="Mvs-tI-JCT"/>
+                        <outlet property="textField" destination="ysF-4F-d5c" id="QQc-V8-h9m"/>
+                        <segue destination="Gfj-F3-voa" kind="presentation" identifier="SendSegue" id="Uh3-jc-8SU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="48" y="-2"/>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+        <!--Receive View Controller-->
+        <scene sceneID="FDX-r2-ar8">
+            <objects>
+                <viewController id="Gfj-F3-voa" customClass="ReceiveViewController" customModule="PlayOn_UIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mmb-mA-Wia">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="받은 문자열이 여기에 나타납니다." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovk-dt-Stq">
+                                <rect key="frame" x="30" y="159" width="333" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="보낼 문자열을 입력해주세요." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RjU-zt-S6a">
+                                <rect key="frame" x="30" y="213" width="333" height="26.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axT-v5-jW3">
+                                <rect key="frame" x="150" y="269.66666666666669" width="93" height="60.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="SEND">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    </backgroundConfiguration>
+                                    <directionalEdgeInsets key="contentInsets" top="20" leading="20" bottom="20" trailing="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="NBe-T6-ZFl" kind="unwind" unwindAction="receive:" id="K1J-WR-DGr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jrq-Rt-g7J"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jrq-Rt-g7J" firstAttribute="trailing" secondItem="ovk-dt-Stq" secondAttribute="trailing" constant="30" id="6Id-Kd-W7V"/>
+                            <constraint firstItem="RjU-zt-S6a" firstAttribute="leading" secondItem="jrq-Rt-g7J" secondAttribute="leading" constant="30" id="FM6-dk-Pq3"/>
+                            <constraint firstItem="ovk-dt-Stq" firstAttribute="leading" secondItem="jrq-Rt-g7J" secondAttribute="leading" constant="30" id="HRy-c1-Yqu"/>
+                            <constraint firstItem="jrq-Rt-g7J" firstAttribute="trailing" secondItem="axT-v5-jW3" secondAttribute="trailing" constant="150" id="XvW-2v-0eZ"/>
+                            <constraint firstItem="axT-v5-jW3" firstAttribute="top" secondItem="RjU-zt-S6a" secondAttribute="bottom" constant="30" id="ahd-BH-Kqb"/>
+                            <constraint firstItem="jrq-Rt-g7J" firstAttribute="trailing" secondItem="RjU-zt-S6a" secondAttribute="trailing" constant="30" id="dEI-96-nqs"/>
+                            <constraint firstItem="axT-v5-jW3" firstAttribute="leading" secondItem="jrq-Rt-g7J" secondAttribute="leading" constant="150" id="m33-NP-aoe"/>
+                            <constraint firstItem="ovk-dt-Stq" firstAttribute="top" secondItem="jrq-Rt-g7J" secondAttribute="top" constant="100" id="sgS-3z-FNd"/>
+                            <constraint firstItem="RjU-zt-S6a" firstAttribute="top" secondItem="ovk-dt-Stq" secondAttribute="bottom" constant="30" id="tCa-Xt-H4R"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qb9-Ee-fQ2"/>
+                    <connections>
+                        <outlet property="button" destination="axT-v5-jW3" id="hW7-0p-h6G"/>
+                        <outlet property="label" destination="ovk-dt-Stq" id="3gd-as-NGv"/>
+                        <outlet property="textField" destination="RjU-zt-S6a" id="Nfn-q5-Hu1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ht1-YG-etX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="NBe-T6-ZFl" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="814.50381679389307" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
