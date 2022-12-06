@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6B1CCD47293F2EA5007A346A /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1CCD46293F2EA5007A346A /* SendViewController.swift */; };
 		6B1CCD49293F2ED5007A346A /* ReceiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1CCD48293F2ED5007A346A /* ReceiveViewController.swift */; };
+		6B3640B2293F72C1002587A6 /* MyCompositionalCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3640B1293F72C1002587A6 /* MyCompositionalCollectionView.swift */; };
+		6B3640B4293F75C1002587A6 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3640B3293F75C1002587A6 /* MyCollectionViewCell.swift */; };
 		6B76210B2936E4C700C869C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B76210A2936E4C700C869C1 /* AppDelegate.swift */; };
 		6B76210D2936E4C700C869C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B76210C2936E4C700C869C1 /* SceneDelegate.swift */; };
 		6B76210F2936E4C700C869C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B76210E2936E4C700C869C1 /* ViewController.swift */; };
@@ -21,6 +23,7 @@
 		6B7621312936E4C900C869C1 /* PlayOn_UIKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7621302936E4C900C869C1 /* PlayOn_UIKitUITestsLaunchTests.swift */; };
 		6B76213F2936E61400C869C1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B76213E2936E61400C869C1 /* LoginViewController.swift */; };
 		6B7E45B2293CEFCC00EC5352 /* MyUIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7E45B1293CEFCC00EC5352 /* MyUIActivityIndicatorView.swift */; };
+		6BB6318D293F7C7200C2065B /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB6318C293F7C7200C2065B /* ModelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,8 @@
 /* Begin PBXFileReference section */
 		6B1CCD46293F2EA5007A346A /* SendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
 		6B1CCD48293F2ED5007A346A /* ReceiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveViewController.swift; sourceTree = "<group>"; };
+		6B3640B1293F72C1002587A6 /* MyCompositionalCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCompositionalCollectionView.swift; sourceTree = "<group>"; };
+		6B3640B3293F75C1002587A6 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		6B61E855293CA1540013FBEE /* MakePreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePreviewProvider.swift; sourceTree = "<group>"; };
 		6B7621072936E4C700C869C1 /* PlayOn_UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayOn_UIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B76210A2936E4C700C869C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +65,7 @@
 		6B7621302936E4C900C869C1 /* PlayOn_UIKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayOn_UIKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6B76213E2936E61400C869C1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6B7E45B1293CEFCC00EC5352 /* MyUIActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUIActivityIndicatorView.swift; sourceTree = "<group>"; };
+		6BB6318C293F7C7200C2065B /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,15 @@
 				6B1CCD48293F2ED5007A346A /* ReceiveViewController.swift */,
 			);
 			path = "Send&Receive";
+			sourceTree = "<group>";
+		};
+		6B3640B0293F6E93002587A6 /* CollectionViewCompositionalLayout */ = {
+			isa = PBXGroup;
+			children = (
+				6B3640B1293F72C1002587A6 /* MyCompositionalCollectionView.swift */,
+				6B3640B3293F75C1002587A6 /* MyCollectionViewCell.swift */,
+			);
+			path = CollectionViewCompositionalLayout;
 			sourceTree = "<group>";
 		};
 		6B61E854293CA0840013FBEE /* Preview */ = {
@@ -174,9 +189,19 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		6BB6318E293F92CC00C2065B /* SampleModel */ = {
+			isa = PBXGroup;
+			children = (
+				6BB6318C293F7C7200C2065B /* ModelData.swift */,
+			);
+			path = SampleModel;
+			sourceTree = "<group>";
+		};
 		6BC4DE7C293865E800A16E2E /* Findings */ = {
 			isa = PBXGroup;
 			children = (
+				6BB6318E293F92CC00C2065B /* SampleModel */,
+				6B3640B0293F6E93002587A6 /* CollectionViewCompositionalLayout */,
 				6B1CCD45293F2E2F007A346A /* Send&Receive */,
 				6B61E854293CA0840013FBEE /* Preview */,
 				6B7E45B1293CEFCC00EC5352 /* MyUIActivityIndicatorView.swift */,
@@ -315,11 +340,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BB6318D293F7C7200C2065B /* ModelData.swift in Sources */,
+				6B3640B2293F72C1002587A6 /* MyCompositionalCollectionView.swift in Sources */,
 				6B1CCD49293F2ED5007A346A /* ReceiveViewController.swift in Sources */,
 				6B76210F2936E4C700C869C1 /* ViewController.swift in Sources */,
 				6B7621152936E4C700C869C1 /* PlayOn_UIKit.xcdatamodeld in Sources */,
 				6B7E45B2293CEFCC00EC5352 /* MyUIActivityIndicatorView.swift in Sources */,
 				6B76210B2936E4C700C869C1 /* AppDelegate.swift in Sources */,
+				6B3640B4293F75C1002587A6 /* MyCollectionViewCell.swift in Sources */,
 				6B76213F2936E61400C869C1 /* LoginViewController.swift in Sources */,
 				6B1CCD47293F2EA5007A346A /* SendViewController.swift in Sources */,
 				6B76210D2936E4C700C869C1 /* SceneDelegate.swift in Sources */,
