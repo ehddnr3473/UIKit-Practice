@@ -11,6 +11,7 @@
 		6B1CCD49293F2ED5007A346A /* ReceiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1CCD48293F2ED5007A346A /* ReceiveViewController.swift */; };
 		6B3640B2293F72C1002587A6 /* MyCompositionalCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3640B1293F72C1002587A6 /* MyCompositionalCollectionView.swift */; };
 		6B3640B4293F75C1002587A6 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3640B3293F75C1002587A6 /* MyCollectionViewCell.swift */; };
+		6B6A88172948BF6600C9E8D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B6A88192948BF6600C9E8D1 /* InfoPlist.strings */; };
 		6B76210B2936E4C700C869C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B76210A2936E4C700C869C1 /* AppDelegate.swift */; };
 		6B76210D2936E4C700C869C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B76210C2936E4C700C869C1 /* SceneDelegate.swift */; };
 		6B76210F2936E4C700C869C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B76210E2936E4C700C869C1 /* ViewController.swift */; };
@@ -49,6 +50,8 @@
 		6B3640B1293F72C1002587A6 /* MyCompositionalCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCompositionalCollectionView.swift; sourceTree = "<group>"; };
 		6B3640B3293F75C1002587A6 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		6B61E855293CA1540013FBEE /* MakePreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePreviewProvider.swift; sourceTree = "<group>"; };
+		6B6A881C2948C14E00C9E8D1 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6B6A881E2948C89200C9E8D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6B7621072936E4C700C869C1 /* PlayOn_UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayOn_UIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B76210A2936E4C700C869C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B76210C2936E4C700C869C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +155,7 @@
 				6B7621182936E4C900C869C1 /* LaunchScreen.storyboard */,
 				6B76211B2936E4C900C869C1 /* Info.plist */,
 				6B7621132936E4C700C869C1 /* PlayOn_UIKit.xcdatamodeld */,
+				6B6A88192948BF6600C9E8D1 /* InfoPlist.strings */,
 			);
 			path = PlayOn_UIKit;
 			sourceTree = "<group>";
@@ -295,6 +299,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 6B7620FE2936E4C700C869C1;
 			productRefGroup = 6B7621082936E4C700C869C1 /* Products */;
@@ -314,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B76211A2936E4C900C869C1 /* LaunchScreen.storyboard in Resources */,
+				6B6A88172948BF6600C9E8D1 /* InfoPlist.strings in Resources */,
 				6B7621172936E4C900C869C1 /* Assets.xcassets in Resources */,
 				6B7621122936E4C700C869C1 /* Main.storyboard in Resources */,
 			);
@@ -387,6 +393,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		6B6A88192948BF6600C9E8D1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B6A881C2948C14E00C9E8D1 /* ko */,
+				6B6A881E2948C89200C9E8D1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		6B7621102936E4C700C869C1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -410,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -456,6 +472,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -470,6 +487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -510,6 +528,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -531,6 +550,7 @@
 				DEVELOPMENT_TEAM = 65KV6R2AGS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PlayOn_UIKit/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -560,6 +580,7 @@
 				DEVELOPMENT_TEAM = 65KV6R2AGS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PlayOn_UIKit/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -626,6 +647,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 65KV6R2AGS;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Yeolmok.PlayOn-UIKitUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -644,6 +666,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 65KV6R2AGS;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Yeolmok.PlayOn-UIKitUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";

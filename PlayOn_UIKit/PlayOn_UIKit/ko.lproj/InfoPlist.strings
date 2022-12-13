@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  PlayOn_UIKit
+
+  Created by 김동욱 on 2022/12/13.
+  
+*/
+
+"CFBundleDisplayName" = "현지화";
