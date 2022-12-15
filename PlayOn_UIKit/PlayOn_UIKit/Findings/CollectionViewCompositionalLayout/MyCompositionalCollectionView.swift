@@ -91,23 +91,23 @@ extension MyCompositionalCollectionView: UICollectionViewDataSource {
     }
 }
 
-//#if DEBUG
-//
-//import SwiftUI
-//
-//struct ViewControllerRepresentable: UIViewControllerRepresentable {
-//    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) { }
-//    
-//    func makeUIViewController(context: Context) -> some UIViewController {
-//        // return ViewController
-//        MyCompositionalCollectionView()
-//    }
-//}
-//
-//struct ViewControllerRepresentablePreviewProvider: PreviewProvider {
-//    static var previews: some View {
-//        ViewControllerRepresentable()
-//    }
-//}
-//
-//#endif
+#if DEBUG
+
+import SwiftUI
+
+struct MyCompositionalCollectionViewRepresentable: UIViewControllerRepresentable {
+    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) { }
+    
+    func makeUIViewController(context: Context) -> some UIViewController {
+        // return ViewController
+        MyCompositionalCollectionView()
+    }
+}
+
+struct MyCompositionalCollectionViewRepresentablePreviewProvider: PreviewProvider {
+    static var previews: some View {
+        MyCompositionalCollectionViewRepresentable()
+    }
+}
+
+#endif
