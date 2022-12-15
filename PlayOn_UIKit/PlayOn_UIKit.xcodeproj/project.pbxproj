@@ -11,6 +11,8 @@
 		6B1CCD49293F2ED5007A346A /* ReceiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1CCD48293F2ED5007A346A /* ReceiveViewController.swift */; };
 		6B3640B2293F72C1002587A6 /* MyCompositionalCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3640B1293F72C1002587A6 /* MyCompositionalCollectionView.swift */; };
 		6B3640B4293F75C1002587A6 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3640B3293F75C1002587A6 /* MyCollectionViewCell.swift */; };
+		6B391179294BCF8700B5DB04 /* JGProgressHUDIndicators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B391178294BCF8700B5DB04 /* JGProgressHUDIndicators.swift */; };
+		6B39117C294BD2B500B5DB04 /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 6B39117B294BD2B500B5DB04 /* JGProgressHUD */; };
 		6B6A88172948BF6600C9E8D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B6A88192948BF6600C9E8D1 /* InfoPlist.strings */; };
 		6B76210B2936E4C700C869C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B76210A2936E4C700C869C1 /* AppDelegate.swift */; };
 		6B76210D2936E4C700C869C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B76210C2936E4C700C869C1 /* SceneDelegate.swift */; };
@@ -49,6 +51,7 @@
 		6B1CCD48293F2ED5007A346A /* ReceiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveViewController.swift; sourceTree = "<group>"; };
 		6B3640B1293F72C1002587A6 /* MyCompositionalCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCompositionalCollectionView.swift; sourceTree = "<group>"; };
 		6B3640B3293F75C1002587A6 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		6B391178294BCF8700B5DB04 /* JGProgressHUDIndicators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JGProgressHUDIndicators.swift; sourceTree = "<group>"; };
 		6B61E855293CA1540013FBEE /* MakePreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePreviewProvider.swift; sourceTree = "<group>"; };
 		6B6A881C2948C14E00C9E8D1 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6B6A881E2948C89200C9E8D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -76,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B39117C294BD2B500B5DB04 /* JGProgressHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +116,15 @@
 				6B3640B3293F75C1002587A6 /* MyCollectionViewCell.swift */,
 			);
 			path = CollectionViewCompositionalLayout;
+			sourceTree = "<group>";
+		};
+		6B391177294BCEFD00B5DB04 /* ProgressIndicators */ = {
+			isa = PBXGroup;
+			children = (
+				6B7E45B1293CEFCC00EC5352 /* MyUIActivityIndicatorView.swift */,
+				6B391178294BCF8700B5DB04 /* JGProgressHUDIndicators.swift */,
+			);
+			path = ProgressIndicators;
 			sourceTree = "<group>";
 		};
 		6B61E854293CA0840013FBEE /* Preview */ = {
@@ -204,11 +217,11 @@
 		6BC4DE7C293865E800A16E2E /* Findings */ = {
 			isa = PBXGroup;
 			children = (
+				6B391177294BCEFD00B5DB04 /* ProgressIndicators */,
 				6BB6318E293F92CC00C2065B /* SampleModel */,
 				6B3640B0293F6E93002587A6 /* CollectionViewCompositionalLayout */,
 				6B1CCD45293F2E2F007A346A /* Send&Receive */,
 				6B61E854293CA0840013FBEE /* Preview */,
-				6B7E45B1293CEFCC00EC5352 /* MyUIActivityIndicatorView.swift */,
 			);
 			path = Findings;
 			sourceTree = "<group>";
@@ -229,6 +242,9 @@
 			dependencies = (
 			);
 			name = PlayOn_UIKit;
+			packageProductDependencies = (
+				6B39117B294BD2B500B5DB04 /* JGProgressHUD */,
+			);
 			productName = PlayOn_UIKit;
 			productReference = 6B7621072936E4C700C869C1 /* PlayOn_UIKit.app */;
 			productType = "com.apple.product-type.application";
@@ -302,6 +318,9 @@
 				ko,
 			);
 			mainGroup = 6B7620FE2936E4C700C869C1;
+			packageReferences = (
+				6B39117A294BD2B500B5DB04 /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
+			);
 			productRefGroup = 6B7621082936E4C700C869C1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -357,6 +376,7 @@
 				6B76213F2936E61400C869C1 /* LoginViewController.swift in Sources */,
 				6B1CCD47293F2EA5007A346A /* SendViewController.swift in Sources */,
 				6B76210D2936E4C700C869C1 /* SceneDelegate.swift in Sources */,
+				6B391179294BCF8700B5DB04 /* JGProgressHUDIndicators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,6 +737,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6B39117A294BD2B500B5DB04 /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6B39117B294BD2B500B5DB04 /* JGProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B39117A294BD2B500B5DB04 /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
+			productName = JGProgressHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		6B7621132936E4C700C869C1 /* PlayOn_UIKit.xcdatamodeld */ = {

@@ -53,23 +53,22 @@ class MyUIActivityIndicatorView: UIViewController {
     }
 }
 
-//#if DEBUG
-//
-//import SwiftUI
-//
-//struct ViewControllerRepresentable: UIViewControllerRepresentable {
-//    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) { }
-//
-//    func makeUIViewController(context: Context) -> some UIViewController {
-//        // return ViewController
-//        MyUIActivityIndicatorView()
-//    }
-//}
-//
-//struct ViewControllerRepresentablePreviewProvider: PreviewProvider {
-//    static var previews: some View {
-//        ViewControllerRepresentable()
-//    }
-//}
-//
-//#endif
+#if DEBUG
+
+import SwiftUI
+
+struct MyUIActivityIndicatorViewRepresentable: UIViewControllerRepresentable {
+    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) { }
+
+    func makeUIViewController(context: Context) -> some UIViewController {
+        MyUIActivityIndicatorView()
+    }
+}
+
+struct MyUIActivityIndicatorViewRepresentablePreviewProvider: PreviewProvider {
+    static var previews: some View {
+        MyUIActivityIndicatorViewRepresentable()
+    }
+}
+
+#endif
