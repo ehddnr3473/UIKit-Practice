@@ -20,10 +20,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        let model = Counter(number: 0)
-        let rootViewController = CountingViewController()
-        let viewModel = CountingViewModel(model)
-        rootViewController.viewModel = viewModel
+//        let model = Counter(number: 0)
+        let rootViewController = TestDiffableViewController()
+//        let viewModel = CountingViewModel(model)
+//        rootViewController.viewModel = viewModel
         let navigationController = UINavigationController(rootViewController: rootViewController)
         let window = UIWindow(windowScene: windowScene)
         window.rootViewController = navigationController
