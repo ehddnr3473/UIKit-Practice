@@ -1,5 +1,5 @@
 //
-//  TestDiffableViewController.swift
+//  DrinksViewController.swift
 //  PlayOn_UIKit
 //
 //  Created by 김동욱 on 2022/12/28.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TestDiffableViewController: UIViewController {
+class DrinksViewController: UIViewController {
 
     enum Section: CaseIterable {
         case main
@@ -61,7 +61,7 @@ class TestDiffableViewController: UIViewController {
     }
 }
 
-extension TestDiffableViewController {
+extension DrinksViewController {
     func createLayout() -> UICollectionViewLayout {
         let layout = UICollectionViewCompositionalLayout { (sectionIndex: Int,
             layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection in
@@ -109,7 +109,7 @@ extension TestDiffableViewController {
     }
 }
 
-extension TestDiffableViewController: UISearchBarDelegate {
+extension DrinksViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         performQuery(with: searchText)
     }

@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
 //        let model = Counter(number: 0)
-        let rootViewController = TestDiffableViewController()
+        let rootViewController = DrinksViewController()
 //        let viewModel = CountingViewModel(model)
 //        rootViewController.viewModel = viewModel
         let navigationController = UINavigationController(rootViewController: rootViewController)
