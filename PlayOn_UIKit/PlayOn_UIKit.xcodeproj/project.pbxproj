@@ -27,6 +27,10 @@
 		6B76213F2936E61400C869C1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B76213E2936E61400C869C1 /* LoginViewController.swift */; };
 		6B7E45B2293CEFCC00EC5352 /* MyUIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7E45B1293CEFCC00EC5352 /* MyUIActivityIndicatorView.swift */; };
 		6B86B2BB294C0BAA00BD04EB /* MyMVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B86B2BA294C0BAA00BD04EB /* MyMVVM.swift */; };
+		6B8F5F2C295C1B9F005AD041 /* TestDiffableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F5F2B295C1B9F005AD041 /* TestDiffableViewController.swift */; };
+		6B8F5F2E295C1C1D005AD041 /* LabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F5F2D295C1C1D005AD041 /* LabelCollectionViewCell.swift */; };
+		6B8F5F30295C2226005AD041 /* DrinksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F5F2F295C2226005AD041 /* DrinksController.swift */; };
+		6B8F5F32295C27BB005AD041 /* DrinksRowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F5F31295C27BB005AD041 /* DrinksRowData.swift */; };
 		6BB6318D293F7C7200C2065B /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB6318C293F7C7200C2065B /* ModelData.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +77,10 @@
 		6B76213E2936E61400C869C1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6B7E45B1293CEFCC00EC5352 /* MyUIActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUIActivityIndicatorView.swift; sourceTree = "<group>"; };
 		6B86B2BA294C0BAA00BD04EB /* MyMVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMVVM.swift; sourceTree = "<group>"; };
+		6B8F5F2B295C1B9F005AD041 /* TestDiffableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDiffableViewController.swift; sourceTree = "<group>"; };
+		6B8F5F2D295C1C1D005AD041 /* LabelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCollectionViewCell.swift; sourceTree = "<group>"; };
+		6B8F5F2F295C2226005AD041 /* DrinksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksController.swift; sourceTree = "<group>"; };
+		6B8F5F31295C27BB005AD041 /* DrinksRowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksRowData.swift; sourceTree = "<group>"; };
 		6BB6318C293F7C7200C2065B /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +143,17 @@
 				6B61E855293CA1540013FBEE /* MakePreviewProvider.swift */,
 			);
 			path = Preview;
+			sourceTree = "<group>";
+		};
+		6B696533295B38EF00C0B13C /* Diffable DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				6B8F5F2B295C1B9F005AD041 /* TestDiffableViewController.swift */,
+				6B8F5F2D295C1C1D005AD041 /* LabelCollectionViewCell.swift */,
+				6B8F5F2F295C2226005AD041 /* DrinksController.swift */,
+				6B8F5F31295C27BB005AD041 /* DrinksRowData.swift */,
+			);
+			path = "Diffable DataSource";
 			sourceTree = "<group>";
 		};
 		6B7620FE2936E4C700C869C1 = {
@@ -219,6 +238,7 @@
 		6BC4DE7C293865E800A16E2E /* Findings */ = {
 			isa = PBXGroup;
 			children = (
+				6B696533295B38EF00C0B13C /* Diffable DataSource */,
 				6B391177294BCEFD00B5DB04 /* ProgressIndicators */,
 				6BB6318E293F92CC00C2065B /* SampleModel */,
 				6B3640B0293F6E93002587A6 /* CollectionViewCompositionalLayout */,
@@ -368,6 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B8F5F2C295C1B9F005AD041 /* TestDiffableViewController.swift in Sources */,
 				6BB6318D293F7C7200C2065B /* ModelData.swift in Sources */,
 				6B3640B2293F72C1002587A6 /* MyCompositionalCollectionView.swift in Sources */,
 				6B1CCD49293F2ED5007A346A /* ReceiveViewController.swift in Sources */,
@@ -378,8 +399,11 @@
 				6B3640B4293F75C1002587A6 /* MyCollectionViewCell.swift in Sources */,
 				6B76213F2936E61400C869C1 /* LoginViewController.swift in Sources */,
 				6B1CCD47293F2EA5007A346A /* SendViewController.swift in Sources */,
+				6B8F5F2E295C1C1D005AD041 /* LabelCollectionViewCell.swift in Sources */,
 				6B76210D2936E4C700C869C1 /* SceneDelegate.swift in Sources */,
 				6B86B2BB294C0BAA00BD04EB /* MyMVVM.swift in Sources */,
+				6B8F5F32295C27BB005AD041 /* DrinksRowData.swift in Sources */,
+				6B8F5F30295C2226005AD041 /* DrinksController.swift in Sources */,
 				6B391179294BCF8700B5DB04 /* JGProgressHUDIndicators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
