@@ -12,10 +12,10 @@ class MyHostingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureEmbed()
+        configureAndEmbedView()
     }
     
-    private func configureModal() {
+    private func configureAndPresentView() {
         let swiftUIView = MySwiftUIView()
         let hostingController = UIHostingController(rootView: swiftUIView)
         
@@ -27,14 +27,14 @@ class MyHostingViewController: UIViewController {
         present(hostingController, animated: true)
     }
     
-    @objc func pushSwiftUIView() {
+    @objc func configureAndPushView() {
         let swiftUIView = MySwiftUIView()
         let hostingController = UIHostingController(rootView: swiftUIView)
             
         navigationController?.pushViewController(hostingController, animated: true)
     }
     
-    private func configureEmbed() {
+    private func configureAndEmbedView() {
         let swiftUIView = MySwiftUIView()
         let hostingController = UIHostingController(rootView: swiftUIView)
         
