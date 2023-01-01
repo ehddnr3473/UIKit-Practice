@@ -24,7 +24,14 @@ class MyHostingViewController: UIViewController {
 
         // popover view 사이즈가 SwiftUI 콘텐츠에 알맞게 설정됨.
         hostingController.modalPresentationStyle = .popover
-        self.present(hostingController, animated: true)
+        present(hostingController, animated: true)
+    }
+    
+    @objc func pushSwiftUIView() {
+        let swiftUIView = MySwiftUIView()
+        let hostingController = UIHostingController(rootView: swiftUIView)
+            
+        navigationController?.pushViewController(hostingController, animated: true)
     }
     
     private func configureEmbed() {
