@@ -7,7 +7,7 @@
 
 import Foundation
 
-let drinksRowData = """
+let drinksRawData = """
 Americano,500
 Ade,500
 Apple juice,300

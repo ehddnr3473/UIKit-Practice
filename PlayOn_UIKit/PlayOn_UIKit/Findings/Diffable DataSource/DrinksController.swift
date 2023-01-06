@@ -48,7 +48,7 @@ class DrinksController {
 extension DrinksController {
     // RawData를 [Drink]로 반환
     private func generateDrinks() -> [Drink] {
-        let components = drinksRowData.components(separatedBy: CharacterSet.newlines)
+        let components = drinksRawData.components(separatedBy: CharacterSet.newlines)
         var drinks = [Drink]()
         for line in components {
             let drinkComponents = line.components(separatedBy: ",")
