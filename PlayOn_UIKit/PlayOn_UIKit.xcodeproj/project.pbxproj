@@ -33,7 +33,7 @@
 		6B8F5F2C295C1B9F005AD041 /* DrinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F5F2B295C1B9F005AD041 /* DrinksViewController.swift */; };
 		6B8F5F2E295C1C1D005AD041 /* LabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F5F2D295C1C1D005AD041 /* LabelCollectionViewCell.swift */; };
 		6B8F5F30295C2226005AD041 /* DrinksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F5F2F295C2226005AD041 /* DrinksController.swift */; };
-		6B8F5F32295C27BB005AD041 /* DrinksRowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F5F31295C27BB005AD041 /* DrinksRowData.swift */; };
+		6B8F5F32295C27BB005AD041 /* DrinksRawData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F5F31295C27BB005AD041 /* DrinksRawData.swift */; };
 		6BB6318D293F7C7200C2065B /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB6318C293F7C7200C2065B /* ModelData.swift */; };
 		6BD69EBE2961DBB0008D9897 /* MyHostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD69EBD2961DBB0008D9897 /* MyHostingViewController.swift */; };
 		6BD69EC02961DBC4008D9897 /* MySwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD69EBF2961DBC4008D9897 /* MySwiftUIView.swift */; };
@@ -88,7 +88,7 @@
 		6B8F5F2B295C1B9F005AD041 /* DrinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksViewController.swift; sourceTree = "<group>"; };
 		6B8F5F2D295C1C1D005AD041 /* LabelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCollectionViewCell.swift; sourceTree = "<group>"; };
 		6B8F5F2F295C2226005AD041 /* DrinksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksController.swift; sourceTree = "<group>"; };
-		6B8F5F31295C27BB005AD041 /* DrinksRowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksRowData.swift; sourceTree = "<group>"; };
+		6B8F5F31295C27BB005AD041 /* DrinksRawData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksRawData.swift; sourceTree = "<group>"; };
 		6BB6318C293F7C7200C2065B /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		6BD69EBD2961DBB0008D9897 /* MyHostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHostingViewController.swift; sourceTree = "<group>"; };
 		6BD69EBF2961DBC4008D9897 /* MySwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftUIView.swift; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 				6B8F5F2B295C1B9F005AD041 /* DrinksViewController.swift */,
 				6B8F5F2D295C1C1D005AD041 /* LabelCollectionViewCell.swift */,
 				6B8F5F2F295C2226005AD041 /* DrinksController.swift */,
-				6B8F5F31295C27BB005AD041 /* DrinksRowData.swift */,
+				6B8F5F31295C27BB005AD041 /* DrinksRawData.swift */,
 			);
 			path = "Diffable DataSource";
 			sourceTree = "<group>";
@@ -438,7 +438,7 @@
 				6B8F5F2E295C1C1D005AD041 /* LabelCollectionViewCell.swift in Sources */,
 				6B76210D2936E4C700C869C1 /* SceneDelegate.swift in Sources */,
 				6B86B2BB294C0BAA00BD04EB /* MyMVVM.swift in Sources */,
-				6B8F5F32295C27BB005AD041 /* DrinksRowData.swift in Sources */,
+				6B8F5F32295C27BB005AD041 /* DrinksRawData.swift in Sources */,
 				6B8F5F30295C2226005AD041 /* DrinksController.swift in Sources */,
 				6B391179294BCF8700B5DB04 /* JGProgressHUDIndicators.swift in Sources */,
 			);
