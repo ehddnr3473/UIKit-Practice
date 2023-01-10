@@ -37,6 +37,9 @@
 		6BB6318D293F7C7200C2065B /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB6318C293F7C7200C2065B /* ModelData.swift */; };
 		6BD69EBE2961DBB0008D9897 /* MyHostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD69EBD2961DBB0008D9897 /* MyHostingViewController.swift */; };
 		6BD69EC02961DBC4008D9897 /* MySwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD69EBF2961DBC4008D9897 /* MySwiftUIView.swift */; };
+		6BFA18C7296D000E00C0EEE3 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFA18C6296D000E00C0EEE3 /* CalendarViewController.swift */; };
+		6BFA18C9296D007700C0EEE3 /* EventDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFA18C8296D007700C0EEE3 /* EventDatabase.swift */; };
+		6BFA18CB296D06A600C0EEE3 /* RedBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFA18CA296D06A600C0EEE3 /* RedBackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +95,9 @@
 		6BB6318C293F7C7200C2065B /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		6BD69EBD2961DBB0008D9897 /* MyHostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHostingViewController.swift; sourceTree = "<group>"; };
 		6BD69EBF2961DBC4008D9897 /* MySwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftUIView.swift; sourceTree = "<group>"; };
+		6BFA18C6296D000E00C0EEE3 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		6BFA18C8296D007700C0EEE3 /* EventDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDatabase.swift; sourceTree = "<group>"; };
+		6BFA18CA296D06A600C0EEE3 /* RedBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedBackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +264,7 @@
 		6BC4DE7C293865E800A16E2E /* Findings */ = {
 			isa = PBXGroup;
 			children = (
+				6BFA18C5296CFFE800C0EEE3 /* CalendarView */,
 				6BD69EBC2961DB89008D9897 /* HostingController */,
 				6B8EA4F4295EC80E00C4A3EB /* TableView */,
 				6B696533295B38EF00C0B13C /* Diffable DataSource */,
@@ -278,6 +285,16 @@
 				6BD69EBF2961DBC4008D9897 /* MySwiftUIView.swift */,
 			);
 			path = HostingController;
+			sourceTree = "<group>";
+		};
+		6BFA18C5296CFFE800C0EEE3 /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				6BFA18C6296D000E00C0EEE3 /* CalendarViewController.swift */,
+				6BFA18C8296D007700C0EEE3 /* EventDatabase.swift */,
+				6BFA18CA296D06A600C0EEE3 /* RedBackgroundView.swift */,
+			);
+			path = CalendarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,6 +440,7 @@
 				6BB6318D293F7C7200C2065B /* ModelData.swift in Sources */,
 				6B3640B2293F72C1002587A6 /* MyCompositionalCollectionView.swift in Sources */,
 				6B1CCD49293F2ED5007A346A /* ReceiveViewController.swift in Sources */,
+				6BFA18C7296D000E00C0EEE3 /* CalendarViewController.swift in Sources */,
 				6B8EA4FA295ED10800C4A3EB /* TableModel.swift in Sources */,
 				6B8EA4F8295EC8AA00C4A3EB /* TableViewCell.swift in Sources */,
 				6B76210F2936E4C700C869C1 /* ViewController.swift in Sources */,
@@ -436,9 +454,11 @@
 				6BD69EC02961DBC4008D9897 /* MySwiftUIView.swift in Sources */,
 				6B1CCD47293F2EA5007A346A /* SendViewController.swift in Sources */,
 				6B8F5F2E295C1C1D005AD041 /* LabelCollectionViewCell.swift in Sources */,
+				6BFA18CB296D06A600C0EEE3 /* RedBackgroundView.swift in Sources */,
 				6B76210D2936E4C700C869C1 /* SceneDelegate.swift in Sources */,
 				6B86B2BB294C0BAA00BD04EB /* MyMVVM.swift in Sources */,
 				6B8F5F32295C27BB005AD041 /* DrinksRawData.swift in Sources */,
+				6BFA18C9296D007700C0EEE3 /* EventDatabase.swift in Sources */,
 				6B8F5F30295C2226005AD041 /* DrinksController.swift in Sources */,
 				6B391179294BCF8700B5DB04 /* JGProgressHUDIndicators.swift in Sources */,
 			);
